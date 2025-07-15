@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AcademicPublishing.Contracts\AcademicPublishing.Contracts.csproj" />
+    <ProjectReference Include="..\AcademicPublishing.DataAccess\AcademicPublishing.DataAccess.csproj" />
+    <ProjectReference Include="..\AcademicPublishing.Domain\AcademicPublishing.Domain.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+  	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+  	<NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+</Project>
